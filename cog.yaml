@@ -1,0 +1,21 @@
+build:
+  gpu: false
+  python_version: "3.8"
+  system_packages:
+    - ffmpeg
+    - libmagickwand-dev
+    - build-essential
+    - cmake
+    - imagemagick
+  python_packages:
+    - "requests"
+    - "Pillow==9.4.0"
+    - "opencv-contrib-python==4.7.0.72"
+    - "opencv-python==4.7.0.72"
+    - "numpy==1.24.3"
+    - "wand"
+    - "dlib"
+    - "flask"
+    - "flask-cors"
+    - "replicate"
+predict: "predict.py:Predictor"
